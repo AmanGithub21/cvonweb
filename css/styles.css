@@ -1,0 +1,186 @@
+html {
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+
+body {
+  font-family: 'Montserrat';
+  text-align: center;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'roboto';
+  font-weight: 900;
+}
+
+ul {
+  margin: 50px 0 50px 0;
+  font-size: 1.4rem;
+  line-height: 50px;
+}
+
+p {
+  color: #8f8f8f;
+  font-size: .9rem;
+}
+
+.hovering-effect {
+  border: 1px solid #FF5050;
+}
+
+.hovering-effect:hover {
+  border: 1px solid white;
+  border-radius: 50px;
+  /* position: absolute;
+  z-index: 2;
+  padding: 50px; */
+}
+
+/* section background */
+
+.colored-section{
+  background-color: #ff5050;
+  color: white;
+}
+
+.white-section {
+  background-color: white;
+}
+
+/* heading */
+
+.big-heading {
+  line-height: 1.5;
+  font-size: 3.5rem ;
+}
+
+.section-heading {
+  font-size: 2.5rem;
+}
+
+
+/* title section */
+
+#title {
+  text-align: left;
+}
+
+.navbar {
+  padding:0 0 5rem;
+}
+
+.nav-item {
+  margin-right: 30px;
+  font-size: 1.2rem;
+  font-family: 'ubuntu';
+}
+
+.navbar-brand {
+  font-family: 'Ubuntu';
+  font-weight: 600;
+  font-size: 2rem;
+}
+
+.title-container {
+  padding: 3% 15%;
+}
+
+.title-image {
+  width: 50%;
+  transform: rotate(25deg);
+  position: absolute;
+  right: 20%;
+  top: 0;
+  overflow:hidden;
+}
+
+
+/* About section */
+
+#features {
+  font-family: 'Montserrat';
+  position: relative;
+  z-index: 1;
+  padding-top: 3%;
+  padding-bottom: 3%;
+}
+
+.a-contact {
+  color: inherit;
+}
+
+.a-contact:hover {
+  color: inherit;
+  text-decoration: underline;
+}
+
+.lift-up {
+  transition: all .3s ease-in-out;
+}
+
+.lift-up:hover {
+  box-shadow: rgba(0, 0, 0, 0.22) 0px 19px 43px;
+  transform: translate3d(0px, -1px, 0px);
+}
+
+.skill-text {
+  width: 50%;
+}
+
+@media (max-width: 991px) {
+  .lift-up {
+    display: inline-block;
+    width: 100%;
+  }
+}
+
+
+
+.fa-star, .fa-star-half {
+  color: yellow;
+}
+/* pricing section */
+
+#pricing {
+  padding: 7% 15%;
+}
+
+.pricing-coloum {
+  padding: 3% 2%;
+}
+
+.pricing-text {
+  font-size: 2.5rem;
+}
+
+
+/* call to action section */
+
+#cta {
+  padding: 7% 15% 80px;
+}
+
+
+/* footer section */
+
+#footer {
+  padding: 7% 15%;
+  background-color: black;
+}
+
+.footer-icons a i{
+  color: white;
+  padding: 15px 8px;
+}
+
+
+@media (max-width: 991px) {
+  #title {
+    text-align: center;
+  }
+
+  .title-image {
+    position: static;
+    transform: rotate(0);
+  }
+}
