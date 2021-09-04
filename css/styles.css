@@ -24,22 +24,11 @@ p {
   font-size: .9rem;
 }
 
-.hovering-effect {
-  border: 1px solid #FF5050;
-}
-
-.hovering-effect:hover {
-  border: 1px solid white;
-  border-radius: 50px;
-  /* position: absolute;
-  z-index: 2;
-  padding: 50px; */
-}
-
 /* section background */
 
 .colored-section{
   background-color: #ff5050;
+  /* background-color: black; */
   color: white;
 }
 
@@ -61,49 +50,28 @@ p {
 
 /* title section */
 
-#title {
-  text-align: left;
-}
-
 .navbar {
   padding:0 0 5rem;
 }
 
-.nav-item {
-  margin-right: 30px;
-  font-size: 1.2rem;
-  font-family: 'ubuntu';
+.nav-text {
+  text-decoration: none;
+  color: white;
+  padding: 10px;
+  margin: 15px;
 }
 
-.navbar-brand {
-  font-family: 'Ubuntu';
-  font-weight: 600;
-  font-size: 2rem;
+.nav-text:hover {
+  text-decoration: none;
+  color: white;
 }
 
 .title-container {
   padding: 3% 15%;
 }
 
-.title-image {
-  width: 50%;
-  transform: rotate(25deg);
-  position: absolute;
-  right: 20%;
-  top: 0;
-  overflow:hidden;
-}
-
 
 /* About section */
-
-#features {
-  font-family: 'Montserrat';
-  position: relative;
-  z-index: 1;
-  padding-top: 3%;
-  padding-bottom: 3%;
-}
 
 .a-contact {
   color: inherit;
@@ -115,10 +83,15 @@ p {
 }
 
 .lift-up {
+  margin: 5px;
+  border: 1px solid #ff5050;
+  border-radius: 50px;
   transition: all .3s ease-in-out;
 }
 
 .lift-up:hover {
+  border: 1px solid white;
+  border-radius: 50px;
   box-shadow: rgba(0, 0, 0, 0.22) 0px 19px 43px;
   transform: translate3d(0px, -1px, 0px);
 }
@@ -135,31 +108,9 @@ p {
 }
 
 
-
 .fa-star, .fa-star-half {
   color: yellow;
 }
-/* pricing section */
-
-#pricing {
-  padding: 7% 15%;
-}
-
-.pricing-coloum {
-  padding: 3% 2%;
-}
-
-.pricing-text {
-  font-size: 2.5rem;
-}
-
-
-/* call to action section */
-
-#cta {
-  padding: 7% 15% 80px;
-}
-
 
 /* footer section */
 
@@ -171,16 +122,4 @@ p {
 .footer-icons a i{
   color: white;
   padding: 15px 8px;
-}
-
-
-@media (max-width: 991px) {
-  #title {
-    text-align: center;
-  }
-
-  .title-image {
-    position: static;
-    transform: rotate(0);
-  }
 }
